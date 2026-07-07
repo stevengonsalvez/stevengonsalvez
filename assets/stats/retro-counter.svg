@@ -1,0 +1,19 @@
+<svg width="760" height="120" viewBox="0 0 760 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic engineering profile banner</title>
+  <desc id="desc">Tasteful retro terminal banner for Steven Gonsalvez</desc>
+  <style>
+    .bg { fill: #09090b; }
+    .scan { fill: #111827; }
+    .border { stroke: #22c55e; stroke-width: 2; fill: none; }
+    .title { fill: #f8fafc; font: 800 28px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .sub { fill: #a7f3d0; font: 600 15px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .amber { fill: #facc15; }
+  </style>
+  <rect class="bg" width="760" height="120" rx="8"/>
+  <path class="scan" d="M0 18h760v3H0zM0 54h760v3H0zM0 90h760v3H0z"/>
+  <rect class="border" x="8" y="8" width="744" height="104" rx="6"/>
+  <text x="32" y="50" class="title">STEVEN GONSALVEZ</text>
+  <text x="34" y="82" class="sub">agentic engineering / developer tools / London</text>
+  <text x="610" y="48" class="sub amber">ONLINE</text>
+  <text x="610" y="78" class="sub">since 2014</text>
+</svg>
