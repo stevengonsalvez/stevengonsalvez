@@ -14,10 +14,21 @@ I build practical tools for coding with agents: context engineering, long-term m
 ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Web](https://img.shields.io/badge/-Web-4285F4?style=flat-square&logo=google-chrome&logoColor=white)
 
-## Start Here
+## Read Here
 
 - ✍️ **[stevengonsalvez.com](https://stevengonsalvez.com)** - writing on agents, automation, security, and practical software delivery
 - 📝 **[dev.to/stevengonsalvez](https://dev.to/stevengonsalvez)** - syndicated posts with canonical links back to the blog
+
+## GitHub Activity
+
+![GitHub Contribution Graph](./assets/stats/contribution-heatmap.svg)
+
+<!-- PROFILE-STATS:START -->
+- 21,602 year contributions / 5,930 commits / 433 pull requests / 15,154 private aggregate / 423 owned repos / 32 followers
+<!-- PROFILE-STATS:END -->
+
+## Start Here
+
 - 📦 **[agents-in-a-box](https://github.com/stevengonsalvez/agents-in-a-box)** - context engineering for agentic coding
 - 🧠 **[ainb-reflect-memory](https://github.com/stevengonsalvez/ainb-reflect-memory)** - long-term memory for AI coding agents
 - 🧰 **[ainb-toolkit](https://github.com/stevengonsalvez/ainb-toolkit)** - curated AI coding skills and per-tool rule sets
@@ -78,14 +89,6 @@ I build practical tools for coding with agents: context engineering, long-term m
 - 🧾 **[stevengonsalvez](https://github.com/stevengonsalvez/stevengonsalvez)** - this profile README
 - 🧑‍🎨 **[ian-illustrations-port](https://github.com/stevengonsalvez/ian-illustrations-port)** - English port of hand-drawn Blot illustration skill
 - 🧱 **[styleguides](https://github.com/stevengonsalvez/styleguides)** - coding standards and guidelines archive
-
-## GitHub Activity
-
-![GitHub Contribution Graph](./assets/stats/contribution-heatmap.svg)
-
-<!-- PROFILE-STATS:START -->
-- 21,602 year contributions / 5,930 commits / 433 pull requests / 15,154 private aggregate / 423 owned repos / 32 followers
-<!-- PROFILE-STATS:END -->
 
 ## What I'm Doing
 
