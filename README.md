@@ -16,12 +16,12 @@ I build practical tools for coding with agents: context engineering, long-term m
 
 ## Start Here
 
-- 📦 **[agents-in-a-box](https://github.com/stevengonsalvez/agents-in-a-box)** (18 stars) - context engineering for agentic coding
+- 📦 **[agents-in-a-box](https://github.com/stevengonsalvez/agents-in-a-box)** - context engineering for agentic coding
 - 🧠 **[ainb-reflect-memory](https://github.com/stevengonsalvez/ainb-reflect-memory)** - long-term memory for AI coding agents
 - 🧰 **[ainb-toolkit](https://github.com/stevengonsalvez/ainb-toolkit)** - curated AI coding skills and per-tool rule sets
 - 🛰️ **[cerebro](https://github.com/stevengonsalvez/cerebro)** - local-first, token-minimal daily tech-intelligence pipeline
 - 📊 **[qstatus](https://github.com/stevengonsalvez/qstatus)** - Amazon Q Developer usage monitoring for macOS and CLI
-- 🗂️ **[promptregistry-mcp](https://github.com/stevengonsalvez/promptregistry-mcp)** (7 stars) - lightweight file-based prompt server for developers
+- 🗂️ **[promptregistry-mcp](https://github.com/stevengonsalvez/promptregistry-mcp)** - lightweight file-based prompt server for developers
 - ✍️ **[stevengonsalvez.com](https://stevengonsalvez.com)** - writing on agents, automation, security, and practical software delivery
 
 ## Current Projects
@@ -32,16 +32,16 @@ I build practical tools for coding with agents: context engineering, long-term m
 - 🧰 **[ainb-toolkit](https://github.com/stevengonsalvez/ainb-toolkit)** - portable skills, rules, and agent tooling for ainb
 - 🧠 **[ainb-reflect-memory](https://github.com/stevengonsalvez/ainb-reflect-memory)** - GraphRAG + hybrid recall for coding agents
 - 🔁 **[reflect-kb](https://github.com/stevengonsalvez/reflect-kb)** - archived cross-harness retrieval and learning KB
-- 🧪 **[LLM-dojo](https://github.com/stevengonsalvez/LLM-dojo)** (2 stars) - byte-sized learning experiments for LLM workflows
+- 🧪 **[LLM-dojo](https://github.com/stevengonsalvez/LLM-dojo)** - byte-sized learning experiments for LLM workflows
 - 🧬 **[nanoclaw-standalone](https://github.com/stevengonsalvez/nanoclaw-standalone)** - native runner mode for NanoClaw-style agents
 
 ### Agent Runtime, Prompts & MCP
 
 - 🗂️ **[promptregistry-mcp](https://github.com/stevengonsalvez/promptregistry-mcp)** - file-based prompt server for developers
-- 🌉 **[agent-bridge](https://github.com/stevengonsalvez/agent-bridge)** (2 stars) - TypeScript bridge work for agent integrations
+- 🌉 **[agent-bridge](https://github.com/stevengonsalvez/agent-bridge)** - TypeScript bridge work for agent integrations
 - 🧩 **[mcp-ethicalhacks](https://github.com/stevengonsalvez/mcp-ethicalhacks)** - examples of how MCP compromises can happen
-- ✅ **[todoist-mcp](https://github.com/stevengonsalvez/todoist-mcp)** (2 stars) - Todoist MCP server
-- 🧰 **[claude-in-a-box](https://github.com/stevengonsalvez/claude-in-a-box)** (3 stars) - early boxed agent runtime experiments
+- ✅ **[todoist-mcp](https://github.com/stevengonsalvez/todoist-mcp)** - Todoist MCP server
+- 🧰 **[claude-in-a-box](https://github.com/stevengonsalvez/claude-in-a-box)** - early boxed agent runtime experiments
 - 🛠️ **[claude-debugger](https://github.com/stevengonsalvez/claude-debugger)** - debugging support repo
 
 ### Observability, Usage & Ops
@@ -55,7 +55,7 @@ I build practical tools for coding with agents: context engineering, long-term m
 
 ### Cloud, CI & Platform Experiments
 
-- ☁️ **[cloud-cicd-exploration](https://github.com/stevengonsalvez/cloud-cicd-exploration)** (3 stars) - GitHub Actions and cloud CI experiments
+- ☁️ **[cloud-cicd-exploration](https://github.com/stevengonsalvez/cloud-cicd-exploration)** - GitHub Actions and cloud CI experiments
 - 📈 **[github-actions-newrelic](https://github.com/stevengonsalvez/github-actions-newrelic)** - GitHub Actions metrics to New Relic
 - 🐳 **[docker-knife](https://github.com/stevengonsalvez/docker-knife)** - debugging container
 - 🐳 **[docker-docsify](https://github.com/stevengonsalvez/docker-docsify)** - docsify Docker image
@@ -67,13 +67,13 @@ I build practical tools for coding with agents: context engineering, long-term m
 - 🧑‍🏫 **[devtalk-ai-intro](https://github.com/stevengonsalvez/devtalk-ai-intro)** - Vue AI intro material
 - 🧱 **[royal-mail-storybook](https://github.com/stevengonsalvez/royal-mail-storybook)** - Storybook component library work
 - 🧮 **[graphql-lazyloading-example](https://github.com/stevengonsalvez/graphql-lazyloading-example)** - GraphQL lazy-loading example
-- 🧪 **[ccproxykiro](https://github.com/stevengonsalvez/ccproxykiro)** (1 star) - Anthropic API proxy to AWS CodeWhisperer using Kiro auth
-- 📚 **[python_training](https://github.com/stevengonsalvez/python_training)** (1 star) - Python training material
+- 🧪 **[ccproxykiro](https://github.com/stevengonsalvez/ccproxykiro)** - Anthropic API proxy to AWS CodeWhisperer using Kiro auth
+- 📚 **[python_training](https://github.com/stevengonsalvez/python_training)** - Python training material
 - 📝 **[bytesizedbanter](https://github.com/stevengonsalvez/bytesizedbanter)** - blog publishing repo
 
 ### Personal Infrastructure
 
-- ⚙️ **[dotfiles](https://github.com/stevengonsalvez/dotfiles)** (1 star) - dotfiles
+- ⚙️ **[dotfiles](https://github.com/stevengonsalvez/dotfiles)** - dotfiles
 - 🧾 **[stevengonsalvez](https://github.com/stevengonsalvez/stevengonsalvez)** - this profile README
 - 🧑‍🎨 **[ian-illustrations-port](https://github.com/stevengonsalvez/ian-illustrations-port)** - English port of hand-drawn Blot illustration skill
 - 🧱 **[styleguides](https://github.com/stevengonsalvez/styleguides)** - coding standards and guidelines archive
