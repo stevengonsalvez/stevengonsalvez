@@ -16,13 +16,14 @@ I build practical tools for coding with agents: context engineering, long-term m
 
 ## Start Here
 
+- ✍️ **[stevengonsalvez.com](https://stevengonsalvez.com)** - writing on agents, automation, security, and practical software delivery
+- 📝 **[dev.to/stevengonsalvez](https://dev.to/stevengonsalvez)** - syndicated posts with canonical links back to the blog
 - 📦 **[agents-in-a-box](https://github.com/stevengonsalvez/agents-in-a-box)** - context engineering for agentic coding
 - 🧠 **[ainb-reflect-memory](https://github.com/stevengonsalvez/ainb-reflect-memory)** - long-term memory for AI coding agents
 - 🧰 **[ainb-toolkit](https://github.com/stevengonsalvez/ainb-toolkit)** - curated AI coding skills and per-tool rule sets
 - 🛰️ **[cerebro](https://github.com/stevengonsalvez/cerebro)** - local-first, token-minimal daily tech-intelligence pipeline
 - 📊 **[qstatus](https://github.com/stevengonsalvez/qstatus)** - Amazon Q Developer usage monitoring for macOS and CLI
 - 🗂️ **[promptregistry-mcp](https://github.com/stevengonsalvez/promptregistry-mcp)** - lightweight file-based prompt server for developers
-- ✍️ **[stevengonsalvez.com](https://stevengonsalvez.com)** - writing on agents, automation, security, and practical software delivery
 
 ## Current Projects
 
@@ -106,6 +107,7 @@ I build practical tools for coding with agents: context engineering, long-term m
 ## Connect
 
 [![Blog](https://img.shields.io/badge/-stevengonsalvez.com-FF5722?style=flat-square&logo=rss&logoColor=white)](https://stevengonsalvez.com)
+[![DEV.to](https://img.shields.io/badge/-dev.to%2Fstevengonsalvez-0A0A0A?style=flat-square&logo=devdotto&logoColor=white)](https://dev.to/stevengonsalvez)
 [![GitHub](https://img.shields.io/badge/-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/stevengonsalvez)
 [![Agents](https://img.shields.io/badge/-agents--in--a--box-00A67E?style=flat-square&logo=rust&logoColor=white)](https://github.com/stevengonsalvez/agents-in-a-box)
 
