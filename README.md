@@ -91,7 +91,6 @@ I build practical tools for coding with agents: context engineering, long-term m
 ### Apps, Demos & Learning
 
 - 🧑‍🏫 **[devtalk-ai-intro](https://github.com/stevengonsalvez/devtalk-ai-intro)** - Vue AI intro material
-- 🧱 **[royal-mail-storybook](https://github.com/stevengonsalvez/royal-mail-storybook)** - Storybook component library work
 - 🧮 **[graphql-lazyloading-example](https://github.com/stevengonsalvez/graphql-lazyloading-example)** - GraphQL lazy-loading example
 - 🧪 **[ccproxykiro](https://github.com/stevengonsalvez/ccproxykiro)** - Anthropic API proxy to AWS CodeWhisperer using Kiro auth
 - 📚 **[python_training](https://github.com/stevengonsalvez/python_training)** - Python training material
