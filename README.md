@@ -83,7 +83,7 @@ I build practical tools for coding with agents: context engineering, long-term m
 ![GitHub Contribution Graph](./assets/stats/contribution-heatmap.svg)
 
 <!-- PROFILE-STATS:START -->
-- 21,601 year contributions / 5,929 commits / 433 pull requests / 15,154 private aggregate / 423 owned repos / 32 followers
+- 21,602 year contributions / 5,930 commits / 433 pull requests / 15,154 private aggregate / 423 owned repos / 32 followers
 <!-- PROFILE-STATS:END -->
 
 ## What I'm Doing
