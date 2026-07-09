@@ -21,8 +21,8 @@ I build practical tools for coding with agents: context engineering, long-term m
 
 ## Building Now
 
-- 🏟️ **Chief Engineer at [SHOTClubhouse](https://github.com/SHOTClubhouse)** - building an agentic operating system that helps build SHOTClubhouse itself
-- ⚙️ Every useful tool, workflow, and agent loop gets fed back into that system: product, club portals, content, ops, and delivery all run through it
+- 🏟️ **Chief Engineer at [SHOTClubhouse](https://github.com/SHOTClubhouse)** - building toward an agentic operating system for growing SHOTClubhouse
+- ⚙️ Every useful tool, workflow, and agent loop gets folded back into that direction: product, club portals, content, ops, and delivery
 - 🌶️ **Cofounder + Tech at [CoChilli](https://www.cochilli.co.uk/)** - building out cochilli.co.uk and the commerce, ops, and delivery systems around it
 - 💼 **PopAJob** - Tinder for jobs, currently closed source and planned to open later
 - 🎙️ **JustTalkToIt** - Android app under development, with credit to [crmitchelmore/justspeaktoit](https://github.com/crmitchelmore/justspeaktoit) for the original voice-to-text inspiration
