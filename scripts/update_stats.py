@@ -263,8 +263,7 @@ def update_readme_stats(rows: list[tuple[str, str]]) -> None:
     if not README.exists():
         return
 
-    stats = " / ".join(f"{value} {label}" for label, value in rows)
-    replacement = f"<!-- PROFILE-STATS:START -->\n- {stats}\n<!-- PROFILE-STATS:END -->"
+    replacement = "<!-- PROFILE-STATS:START -->\n<!-- PROFILE-STATS:END -->"
     text = README.read_text(encoding="utf-8")
     updated = re.sub(
         r"<!-- PROFILE-STATS:START -->.*?<!-- PROFILE-STATS:END -->",
