@@ -8,12 +8,14 @@ import html
 import json
 import os
 import pathlib
+import re
 import urllib.error
 import urllib.request
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "assets" / "stats"
+README = ROOT / "README.md"
 USERNAME = os.environ.get("PROFILE_USERNAME", "stevengonsalvez")
 GITHUB_TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
@@ -158,6 +160,24 @@ def retro_counter() -> str:
 """
 
 
+def update_readme_stats(rows: list[tuple[str, str]]) -> None:
+    if not README.exists():
+        return
+
+    stats = " / ".join(f"{value} {label}" for label, value in rows)
+    replacement = f"<!-- PROFILE-STATS:START -->\n- {stats}\n<!-- PROFILE-STATS:END -->"
+    text = README.read_text(encoding="utf-8")
+    updated = re.sub(
+        r"<!-- PROFILE-STATS:START -->.*?<!-- PROFILE-STATS:END -->",
+        replacement,
+        text,
+        flags=re.S,
+    )
+    if updated == text and "<!-- PROFILE-STATS:START -->" not in text:
+        updated = text.rstrip() + "\n\n" + replacement + "\n"
+    README.write_text(updated, encoding="utf-8")
+
+
 def main() -> None:
     user = graphql(QUERY, {"login": USERNAME})
     contributions = user["contributionsCollection"]
@@ -182,6 +202,7 @@ def main() -> None:
     (OUT_DIR / "contribution-summary.svg").write_text(svg_card("github activity", summary_rows), encoding="utf-8")
     (OUT_DIR / "activity-breakdown.svg").write_text(bar_card(activity_rows), encoding="utf-8")
     (OUT_DIR / "retro-counter.svg").write_text(retro_counter(), encoding="utf-8")
+    update_readme_stats(summary_rows)
 
 
 if __name__ == "__main__":

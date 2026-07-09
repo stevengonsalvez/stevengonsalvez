@@ -1,11 +1,18 @@
-# Hi, I'm Steven
+# Steven Gonsalvez
 
 <p align="center">
   <img src="./assets/stats/retro-counter.svg" alt="agentic engineering profile banner" width="760">
 </p>
 
-London-based builder focused on agentic engineering, developer tools, and
-shipping practical systems that make coding agents less fragile.
+<p align="center">
+  <a href="https://stevengonsalvez.com">blog</a> /
+  <a href="https://github.com/stevengonsalvez/agents-in-a-box">agents-in-a-box</a> /
+  <a href="https://github.com/stevengonsalvez/ainb-reflect-memory">agent memory</a> /
+  <a href="https://github.com/stevengonsalvez/cerebro">tech intel</a>
+</p>
+
+London-based builder working on agentic engineering, developer tools, and
+operational systems that make coding agents faster, safer, and easier to steer.
 
 [![Website](https://img.shields.io/badge/stevengonsalvez.com-111111?style=flat-square&logo=firefoxbrowser&logoColor=white)](https://stevengonsalvez.com)
 [![GitHub](https://img.shields.io/badge/GitHub-stevengonsalvez-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/stevengonsalvez)
@@ -19,18 +26,14 @@ shipping practical systems that make coding agents less fragile.
 
 ## Start Here
 
-- **[agents-in-a-box](https://github.com/stevengonsalvez/agents-in-a-box)** -
-  context engineering for agentic coding.
-- **[ainb-reflect-memory](https://github.com/stevengonsalvez/ainb-reflect-memory)** -
-  long-term memory for AI coding agents.
-- **[cerebro](https://github.com/stevengonsalvez/cerebro)** -
-  local-first, token-minimal daily tech-intelligence pipeline.
-- **[qstatus](https://github.com/stevengonsalvez/qstatus)** -
-  Amazon Q Developer usage monitoring for macOS and CLI.
-- **[promptregistry-mcp](https://github.com/stevengonsalvez/promptregistry-mcp)** -
-  lightweight file-based prompt server for developers.
-- **[stevengonsalvez.com](https://stevengonsalvez.com)** -
-  writing on agents, automation, security, and practical software delivery.
+| Project | What it does |
+| --- | --- |
+| **[agents-in-a-box](https://github.com/stevengonsalvez/agents-in-a-box)** | Context engineering for agentic coding. |
+| **[ainb-reflect-memory](https://github.com/stevengonsalvez/ainb-reflect-memory)** | Long-term memory for AI coding agents. |
+| **[cerebro](https://github.com/stevengonsalvez/cerebro)** | Local-first, token-minimal daily tech-intelligence pipeline. |
+| **[qstatus](https://github.com/stevengonsalvez/qstatus)** | Amazon Q Developer usage monitoring for macOS and CLI. |
+| **[promptregistry-mcp](https://github.com/stevengonsalvez/promptregistry-mcp)** | Lightweight file-based prompt server for developers. |
+| **[stevengonsalvez.com](https://stevengonsalvez.com)** | Writing on agents, automation, security, and practical delivery. |
 
 ## GitHub Activity
 
@@ -42,12 +45,23 @@ shipping practical systems that make coding agents less fragile.
 Private and restricted contribution totals are shown only as aggregates. Repo
 names and private work details stay private.
 
+<!-- PROFILE-STATS:START -->
+- 21,599 year contributions / 5,927 commits / 433 pull requests / 15,154 private aggregate / 423 owned repos / 32 followers
+<!-- PROFILE-STATS:END -->
+
 ## What I'm Building Around
 
+```text
+current loop
+  observe the work
+  encode the useful rules
+  build the smallest tool that removes drag
+  write down what actually held up under load
+```
+
 - Agent workspaces that keep context, rules, memories, and tools close to code.
-- Retrieval and recall systems that let coding agents learn without leaking scope.
-- Small CLIs and dashboards that turn invisible developer workflow state into
-  something inspectable.
+- Retrieval systems that let coding agents learn without leaking scope.
+- CLIs and dashboards that expose invisible developer workflow state.
 - Writing that compresses hard-won workflow lessons into practical notes.
 
 ## Latest Writing
