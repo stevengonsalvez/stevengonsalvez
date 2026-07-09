@@ -1,6 +1,6 @@
 # Hi, I'm Steven 👋
 
-📍 **London** | 🤖 **Agentic engineering builder** | 🛠️ **Developer tooling + ops systems**
+📍 **London** | 🏗️ **Chief Engineer at [SHOTClubhouse](https://github.com/SHOTClubhouse)** | 🤖 **Agentic engineering builder**
 
 I build practical tools for coding with agents: context engineering, long-term memory, workflow telemetry, and small CLIs that remove daily drag.
 
@@ -11,8 +11,21 @@ I build practical tools for coding with agents: context engineering, long-term m
 ![Codex](https://img.shields.io/badge/-Codex-121212?style=flat-square&logo=openai&logoColor=white)
 ![Claude](https://img.shields.io/badge/-Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
 ![CLI](https://img.shields.io/badge/-CLI-000000?style=flat-square&logo=gnu-bash&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Azure](https://img.shields.io/badge/-Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![GCP](https://img.shields.io/badge/-GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![iOS](https://img.shields.io/badge/-iOS-000000?style=flat-square&logo=apple&logoColor=white)
+![Android](https://img.shields.io/badge/-Android-3DDC84?style=flat-square&logo=android&logoColor=white)
 ![Web](https://img.shields.io/badge/-Web-4285F4?style=flat-square&logo=google-chrome&logoColor=white)
+
+## Building Now
+
+- 🏟️ **Chief Engineer at [SHOTClubhouse](https://github.com/SHOTClubhouse)** - building an agentic operating system that helps build SHOTClubhouse itself
+- ⚙️ Every useful tool, workflow, and agent loop gets fed back into that system: product, club portals, content, ops, and delivery all run through it
+- 🌶️ **Cofounder + Tech at [CoChilli](https://www.cochilli.co.uk/)** - building out cochilli.co.uk and the commerce, ops, and delivery systems around it
+- 💼 **PopAJob** - Tinder for jobs, currently closed source and planned to open later
+- 🎙️ **JustTalkToIt** - Android app under development, with credit to [crmitchelmore/justspeaktoit](https://github.com/crmitchelmore/justspeaktoit) for the original voice-to-text inspiration
 
 ## Read Here
 
