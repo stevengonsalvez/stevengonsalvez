@@ -15,6 +15,6 @@
   <circle cx="48" cy="31" r="5" fill="#f59e0b"/>
   <circle cx="66" cy="31" r="5" fill="#22c55e"/>
   <text x="30" y="55" class="title">github activity</text>
-  <text x="30" y="72" class="label">year contributions</text><text x="390" y="72" class="value" text-anchor="end">22,494</text><text x="30" y="106" class="label">commits</text><text x="390" y="106" class="value" text-anchor="end">5,956</text><text x="30" y="140" class="label">pull requests</text><text x="390" y="140" class="value" text-anchor="end">443</text><text x="30" y="174" class="label">private aggregate</text><text x="390" y="174" class="value" text-anchor="end">16,011</text><text x="30" y="208" class="label">owned repos</text><text x="390" y="208" class="value" text-anchor="end">433</text><text x="30" y="242" class="label">followers</text><text x="390" y="242" class="value" text-anchor="end">33</text>
-  <text x="390" y="258" class="stamp" text-anchor="end">updated 2026-07-15</text>
+  <text x="30" y="72" class="label">year contributions</text><text x="390" y="72" class="value" text-anchor="end">22,611</text><text x="30" y="106" class="label">commits</text><text x="390" y="106" class="value" text-anchor="end">6,047</text><text x="30" y="140" class="label">pull requests</text><text x="390" y="140" class="value" text-anchor="end">452</text><text x="30" y="174" class="label">private aggregate</text><text x="390" y="174" class="value" text-anchor="end">16,028</text><text x="30" y="208" class="label">owned repos</text><text x="390" y="208" class="value" text-anchor="end">433</text><text x="30" y="242" class="label">followers</text><text x="390" y="242" class="value" text-anchor="end">33</text>
+  <text x="390" y="258" class="stamp" text-anchor="end">updated 2026-07-16</text>
 </svg>
