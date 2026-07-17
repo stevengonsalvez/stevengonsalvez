@@ -10,6 +10,7 @@ import json
 import os
 import pathlib
 import re
+import time
 import urllib.error
 import urllib.request
 
@@ -21,11 +22,22 @@ USERNAME = os.environ.get("PROFILE_USERNAME", "stevengonsalvez")
 GITHUB_TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
 
-QUERY = """
+# GitHub's GraphQL cost calculator rejects any query combining the
+# contribution calendar with contribution totals (RESOURCE_LIMITS_EXCEEDED),
+# so stats are fetched as several tiny queries instead of one.
+COUNTS_QUERY = """
 query($login:String!) {
   user(login:$login) {
     followers { totalCount }
     repositories(first: 1, ownerAffiliations: OWNER) { totalCount }
+    contributionsCollection { restrictedContributionsCount }
+  }
+}
+"""
+
+CALENDAR_QUERY = """
+query($login:String!) {
+  user(login:$login) {
     contributionsCollection {
       contributionCalendar {
         totalContributions
@@ -36,15 +48,19 @@ query($login:String!) {
           }
         }
       }
-      totalCommitContributions
-      totalIssueContributions
-      totalPullRequestContributions
-      totalPullRequestReviewContributions
-      restrictedContributionsCount
     }
   }
 }
 """
+
+
+def contribution_total(field: str) -> int:
+    query = (
+        "query($login:String!) { user(login:$login) "
+        f"{{ contributionsCollection {{ {field} }} }} }}"
+    )
+    user = graphql(query, {"login": USERNAME})
+    return user["contributionsCollection"][field]
 
 
 def graphql(query: str, variables: dict[str, str]) -> dict:
@@ -62,16 +78,21 @@ def graphql(query: str, variables: dict[str, str]) -> dict:
         method="POST",
     )
 
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            payload = json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as exc:
-        body = exc.read().decode("utf-8", errors="replace")
-        raise SystemExit(f"GitHub API failed: {exc.code} {body}") from exc
-
-    if payload.get("errors"):
-        raise SystemExit(json.dumps(payload["errors"], indent=2))
-    return payload["data"]["user"]
+    last_error = ""
+    for attempt in range(4):
+        if attempt:
+            time.sleep(5 * attempt)
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                payload = json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            last_error = f"GitHub API failed: {exc.code} {exc.read().decode('utf-8', errors='replace')}"
+            continue
+        if payload.get("errors"):
+            last_error = json.dumps(payload["errors"], indent=2)
+            continue
+        return payload["data"]["user"]
+    raise SystemExit(last_error)
 
 
 def fmt(n: int) -> str:
@@ -277,30 +298,36 @@ def update_readme_stats(rows: list[tuple[str, str]]) -> None:
 
 
 def main() -> None:
-    user = graphql(QUERY, {"login": USERNAME})
-    contributions = user["contributionsCollection"]
+    user = graphql(COUNTS_QUERY, {"login": USERNAME})
+    restricted = user["contributionsCollection"]["restrictedContributionsCount"]
+    calendar_user = graphql(CALENDAR_QUERY, {"login": USERNAME})
+    calendar_data = calendar_user["contributionsCollection"]["contributionCalendar"]
+    commits = contribution_total("totalCommitContributions")
+    prs = contribution_total("totalPullRequestContributions")
+    issues = contribution_total("totalIssueContributions")
+    reviews = contribution_total("totalPullRequestReviewContributions")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     summary_rows = [
-        ("year contributions", fmt(contributions["contributionCalendar"]["totalContributions"])),
-        ("commits", fmt(contributions["totalCommitContributions"])),
-        ("pull requests", fmt(contributions["totalPullRequestContributions"])),
-        ("private aggregate", fmt(contributions["restrictedContributionsCount"])),
+        ("year contributions", fmt(calendar_data["totalContributions"])),
+        ("commits", fmt(commits)),
+        ("pull requests", fmt(prs)),
+        ("private aggregate", fmt(restricted)),
         ("owned repos", fmt(user["repositories"]["totalCount"])),
         ("followers", fmt(user["followers"]["totalCount"])),
     ]
     activity_rows = [
-        ("commits", contributions["totalCommitContributions"]),
-        ("prs", contributions["totalPullRequestContributions"]),
-        ("issues", contributions["totalIssueContributions"]),
-        ("reviews", contributions["totalPullRequestReviewContributions"]),
-        ("private", contributions["restrictedContributionsCount"]),
+        ("commits", commits),
+        ("prs", prs),
+        ("issues", issues),
+        ("reviews", reviews),
+        ("private", restricted),
     ]
 
     (OUT_DIR / "contribution-summary.svg").write_text(svg_card("github activity", summary_rows), encoding="utf-8")
     (OUT_DIR / "activity-breakdown.svg").write_text(bar_card(activity_rows), encoding="utf-8")
     (OUT_DIR / "contribution-heatmap.svg").write_text(
-        contribution_heatmap(contributions["contributionCalendar"]),
+        contribution_heatmap(calendar_data),
         encoding="utf-8",
     )
     (OUT_DIR / "retro-counter.svg").write_text(retro_counter(), encoding="utf-8")
